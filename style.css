@@ -1,0 +1,144 @@
+.wrapper-main-body {
+  padding: 40px 24px;
+}
+
+.wrapper_main {
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 235px);
+}
+
+.wrapper-content {
+  overflow: hidden;
+}
+
+.ht-title--primary {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.ht-title {
+  position: relative;
+}
+
+.top_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.account-info {
+  flex: 1;
+}
+
+.ht-card.ht-card-dark {
+  border: none;
+  background-color: rgba(30, 30, 30, 0.04);
+}
+
+.ht-card.el-card {
+  border-radius: 10px;
+  background: #fff;
+  color: #1e1e1e;
+}
+
+.ht-card .el-card__body {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(30, 30, 30, 0.65);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rebate_account {
+  color: #1e1e1e;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.account_id {
+  margin-left: 12px;
+}
+
+.rebate_history {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rebate {
+  margin-top: 20px;
+}
+
+.total_text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+  color: rgba(30, 30, 30, 0.65);
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-number {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.number {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.currency {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.bottom {
+  display: flex;
+  gap: 12px;
+}
+
+.el-button--large {
+  height: 48px;
+  padding: 14.5px 16px;
+}
+
+.el-button--small {
+  height: 32px;
+  padding: 7.5px 16px;
+}
+
+.el-button--secondary {
+  background-color: rgba(30, 30, 30, 0.12);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}

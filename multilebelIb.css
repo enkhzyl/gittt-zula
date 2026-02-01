@@ -1,0 +1,319 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #1e1e1e;
+  overflow-x: hidden;
+  font-family: Gilroy, CenturyGothic, Arial, Microsoft YaHei, sans-serif;
+}
+
+/* ===== WRAPPER & MAIN ===== */
+.wrapper-main-body {
+  padding: 40px 24px;
+}
+
+.wrapper_main {
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 235px);
+}
+
+#ib_level {
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+/* ===== TITLE ===== */
+.title {
+  content: "";
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background: rgba(30, 30, 30, 0.12);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+.ht-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+}
+.ht-title--primary {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+/* ===== TOP AREA ===== */
+.top_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.page_header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+/* ===== SELECT DROPDOWN ===== */
+.el-select {
+  position: relative;
+  width: 220px;
+  cursor: pointer;
+}
+
+.el-input__inner {
+  width: 100%;
+  height: 40px;
+  padding: 0 35px 0 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.el-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.el-select:hover .el-select-dropdown {
+  display: block;
+}
+
+.el-select-dropdown__item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.el-select-dropdown__item:hover {
+  background: #f5f7fa;
+}
+
+.el-select-dropdown__item.selected {
+  font-weight: bold;
+  color: #409eff;
+}
+
+/* ===== HIDE ARCHIVE SWITCH ===== */
+.switch_content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.switch-label {
+  font-size: 12px;
+}
+
+.el-switch__core {
+  width: 32px;
+  height: 16px;
+  border-radius: 8px;
+}
+
+.el-switch__input {
+  width: 32px;
+  height: 16px;
+}
+
+/* ===== CENTER IB LEVEL CARD ===== */
+.ib_level_content--upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.ib-level-card {
+  padding: 24px;
+  width: 240px;
+  background-color: rgba(30, 30, 30, 0.04);
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ib-level-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.ib-level-image-wrapper img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.ib_level_content-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37px;
+  height: 75px;
+  text-align: center;
+  margin-top: 16px;
+  color: #1e1e1e;
+  word-wrap: break-word;
+}
+
+.ib_level_content-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37px;
+  height: 38px;
+  text-align: center;
+  margin-top: 16px;
+  color: #1e1e1e;
+}
+
+/* ===== LEVEL SLIDER ===== */
+.level_1 .ht-card-slider-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start; /* LEVEL 1 text төвдөө байлгах */
+}
+
+.level_1 .level-label {
+  min-width: 100px;
+  height: 196px; /* картын өндөртэй ижил */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 14px;
+  background: rgba(30, 30, 30, 0.04);
+  border-radius: 20px;
+  flex-shrink: 0; /* scroll-д shrink болохгүй */
+}
+
+.ht-card-slider {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-top: 32px; /* LEVEL 1-ийн текст зай гаргах */
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.content {
+  margin: 32px;
+}
+.level_1 .content-level {
+  display: flex;
+  align-items: center; /* өндөртэй төвлөрүүлэх */
+  justify-content: center;
+  width: 60px; /* text-ийн өргөн */
+  height: 196px; /* slider картын өндөртэй ижил */
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  background: rgba(30, 30, 30, 0.04);
+  border-radius: 20px;
+  flex-shrink: 0; /* shrink болохгүй */
+}
+
+/* ===== CARD SLIDER ===== */
+.ht-card-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ht-card-slider-content {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.ib-card-wrapper {
+  min-width: 180px;
+  height: 196px;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: rgba(30, 30, 30, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.ib-card-wrapper .ib-card .ib-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.level_1 .ib-card-wrapper .ib-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: var(--ib-level-card-image);
+}
+
+.ib-card .ib-card-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+  margin-top: 4px;
+  word-wrap: break-word;
+}
+
+.ib-card .ib-card-subtitle {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 16px;
+}
+
+/* ===== SCROLLBAR ===== */
+.ht-card-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ht-card-slider::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+
+.ht-card-slider::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.ht-card-slider {
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #f0f0f0;
+}
